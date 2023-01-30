@@ -1,0 +1,18 @@
+<div class="col-md-6">
+    <h4>Tourney ranks</h4>
+    <table
+      class="tb"
+    >
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+      <tr
+        *ngFor="let player of players; let i = index">
+        <td>{{player.rank}}</td>
+        <td>{{player.name}}</td>
+        <td>{{player.score}}</td>
+      </tr>
+    </table>
+</div>
